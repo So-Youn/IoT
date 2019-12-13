@@ -1,0 +1,19 @@
+package workbook.ClassTest;
+
+public class Otab extends Mobile {
+	public Otab(){
+		
+	}
+	public Otab(String mobileName, int batterSize, String osType) {
+		super(mobileName,batterSize,osType);
+	}
+	public int operate(int time) {		//사용
+		int remainBatter=getBatterSize();
+		remainBatter=getBatterSize()-10*time;
+		return remainBatter;
+	}
+	public int charge(int time) {		///충전
+		int remainBatter=getBatterSize()+8*time;
+		return remainBatter;
+	}
+}

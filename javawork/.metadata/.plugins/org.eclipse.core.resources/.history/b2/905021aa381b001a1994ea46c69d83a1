@@ -1,0 +1,14 @@
+package workbook;
+
+public class Calc02 {
+	public int calc(int num, int sum) {
+		for (int i=0;i<=num;i++) {
+			if(i%2==0) {
+				sum = sum+i;
+			}
+			System.out.println("Â¦¼ö : "+i+" ");
+		}
+		System.out.println("°á°ú :"+sum);
+		return 0;
+	}
+}

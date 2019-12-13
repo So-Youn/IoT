@@ -1,0 +1,14 @@
+package oop.Chap06;
+//클래스 정의하고 멤버변수 정의(api에 있는 class와 사용방법 동일
+
+public class Person {
+	public static void main(String[] args) {
+		String name;		//클래스의 특성을 나타내는 데이터 - 멤버변수 or 필드
+		String addr;		//멤버변수는 특별 상황이 아니면 초기값을 주지 않는다.
+							//데이터타입은 기본형, 참조형 모두 가능
+		int age;
+		
+		
+	}
+
+}

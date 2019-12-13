@@ -1,0 +1,13 @@
+package workbook.ClassTest;
+
+public class BookTest {
+	public static void main(String[] args) {
+		Book bookArray[] = new Book[3];
+		bookArray[0]=new Book("SQL Plus",50000,5);
+		bookArray[1]=new Book("Java 2.0",40000,3);
+		bookArray[2]=new Book("JSP Servlet",60000,6);
+		
+		System.out.println("bookName \t bookPrice(¿ø) \tbookDiscountRate(%)");
+	}
+
+}

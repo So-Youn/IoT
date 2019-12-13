@@ -1,0 +1,21 @@
+package Test;
+
+import java.util.Scanner;
+
+public class Main01 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int Ainput = input.nextInt();
+		int Binput = input.nextInt();
+		
+		if (Ainput>Binput) {
+			System.out.print(">");
+		}else if(Ainput<Binput) {
+			System.out.println("<");
+		}else {
+			System.out.print("==");
+		}
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package workbook;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		Account s1 = new Account();
+		s1.setAccount("441-0290-1203");
+		s1.setBalance();
+		s1.setInterestRate(0.073);
+
+		s1.print();
+	}
+
+}

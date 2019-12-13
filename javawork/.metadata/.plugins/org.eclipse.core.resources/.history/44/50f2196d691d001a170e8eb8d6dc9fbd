@@ -1,0 +1,4 @@
+package oop.Chap07.poly.email;
+public class SenderLogic {
+
+}

@@ -1,0 +1,12 @@
+package workbook.ClassTest;
+
+public class AccountTest02 {
+	public static void main(String[] args) {
+		Account[] acc = new Account[5];
+		for(int i = 1;i<Account.length;i++) {
+			acc[i]=new Account("221-0101-211"+i);
+			acc[i].print();
+		}
+	}
+
+}

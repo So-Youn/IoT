@@ -1,0 +1,26 @@
+package Test;
+
+import java.util.Scanner;
+
+public class Main02 {
+	public static void main(String[] args) {
+		int j=1;
+		Scanner input =new Scanner(System.in);
+		int N = input.nextInt();
+		for(int i=1;i<=N;i++) {
+			if(j<=i) {
+			
+				System.out.print(" ");
+				j++;
+			}
+			else {
+				System.out.println("*");
+				j++;
+			}
+			
+			System.out.println( );
+			input.close();
+		}
+	}
+
+}

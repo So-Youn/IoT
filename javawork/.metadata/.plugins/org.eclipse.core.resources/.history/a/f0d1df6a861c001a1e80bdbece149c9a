@@ -1,0 +1,8 @@
+package oop.Chap07;
+
+
+	class Person() {
+	 String name;
+	 int age;
+}
+	class Student() extends Person{

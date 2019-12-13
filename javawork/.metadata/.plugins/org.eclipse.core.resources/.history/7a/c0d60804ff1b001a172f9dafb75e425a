@@ -1,0 +1,16 @@
+package workbook.ClassTest;
+
+import oop.Chap06.Student;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		Student[] studentArr = new Student[3]; 
+		studentArr[0] = new Student("홍길동",15,171,81);
+		studentArr[1] = new Student("한사람",13,183,72);
+		studentArr[2] = new str.Student("임걱정",16,175,65);
+		
+		System.out.println("이름 \t 나이:\t 신장:\t 몸무게:");
+		System.out.println("studentArr[0].getName()");
+	}
+
+}

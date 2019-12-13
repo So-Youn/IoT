@@ -1,0 +1,51 @@
+package workbook.ClassTest;
+
+public class Company {
+	private double salary;
+	double Sum = 0.0;
+	double bonus = 0.0;
+	double annualIncome = 0.0;
+	double afterTaxIncome = 0.0;
+	double afterTaxBonus = 0.0;
+
+	public Company() {
+	}
+
+	public Company(double salary) {
+		this.salary = salary;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public double getBonus() {
+		for (int i = 1; i <= 12; i++) {
+			if (i % 3 == 0) {
+				bonus = bonus + this.salary * 0.2;
+			} else {
+			}
+		}
+		return bonus;
+	}
+
+	public double getIncome() {
+		Sum = this.salary * 12;
+		return Sum;
+	}
+
+	public double getAfterTaxIncome() {
+		afterTaxIncome = Sum - Sum * 0.1;
+		return afterTaxIncome;
+	}
+
+	public double getAfterTaxBonus() {
+		double afterTaxBonus = bonus - bonus * 0.055;
+		return afterTaxBonus;
+	}
+
+}

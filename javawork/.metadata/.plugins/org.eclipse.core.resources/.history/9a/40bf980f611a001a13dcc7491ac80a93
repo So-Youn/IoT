@@ -1,0 +1,25 @@
+package TextBook;
+
+import java.util.Random;
+
+public class ArrayEx6 {
+	public static void main(String[] args) {
+		int[] randV = new int[5];
+		Random rand = new Random();
+		int num ;
+		int Max;
+		int Min;
+
+		for (int i = 0; i < score.length; i++) {
+			num = rand.nextInt();
+			score [i] = num;
+			if (score[i] > Max) {
+				Max = score[i];
+			} else if (score[i] < Min) {
+				Min = score[i];
+			}
+		}
+		System.out.println(+Max);
+		System.out.println(+Min);
+	}
+}

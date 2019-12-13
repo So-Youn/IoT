@@ -1,0 +1,10 @@
+package oop.Chap06.constructor;
+
+public class MyConstructorTest {
+	public static void main(String[] args) {
+		MyConstructor obj = new MyConstructor();	//기본 생성자 호출
+		System.out.println(obj.getName()+","+obj.getId()+","+obj.getPass());
+		
+	}
+
+}

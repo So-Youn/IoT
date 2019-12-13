@@ -1,0 +1,37 @@
+package oop.Chap07.poly;
+
+public class Tea extends Beverage{
+private int amount;
+	
+	public Tea() {
+		
+	}
+	public Tea(String name,int amount) {
+		super(name);
+		this.amount = amount;
+	}
+	public int getAmount() {
+		return amount;
+	}
+
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	@Override
+		public void calcPrice(int price) {
+			if(getName().equals("Americano")) {
+				setPrice(1500);
+			}else if(getName().equals("CafeLatte")) {
+				setPrice(2500);
+			}else if(getName().equals("Cappuccino")) {
+				setPrice(3000);
+			}
+	}
+	/*- lemonTea : 1500
+
+	   - ginsengTea : 2000
+
+	   - redginsengTea : 2500
+	[출처] 다형성연습2|작성자 heaves1*/
+	
+}

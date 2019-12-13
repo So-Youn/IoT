@@ -1,0 +1,19 @@
+package TextBook;
+
+public class ArrayEx6 {
+	public static void main(String[] args) {
+		int[] score = { 79, 88, 91, 33, 100, 55, 95 };
+		int Max = score[0];
+		int Min = score[0];
+
+		for (int i = 1; i < score.length; i++) {
+			if (score[i] > Max) {
+				Max = score[i];
+			} else if (score[i] < Min) {
+				Min = score[i];
+			}
+		}
+		System.out.println(+Max);
+		System.out.println(+Min);
+	}
+}

@@ -1,0 +1,23 @@
+package oop.Chap06;
+/*//클래스 정의하고 멤버변수 정의(api에 있는 class와 사용방법 동일)
+ * - 멤버변수 정의할 때는 특별한 경우를 제외하고 초기값을 주지 않는다
+ * - 초기값을 정의하지 않아도 참조형은 null, 정수형은 0, 실수형은 0.0, boolean은 false
+ * - 멤버변수를 정의할 때 접근 제어자를 추가해서 접근을 제어할 수 있다.
+ * 		추가할 수 있는 접근 제어자의 종류 : 
+ * 		public
+ * 		default
+ * 		protected
+ * 		private
+*/
+
+public class Person {
+	
+		public String name;		//클래스의 특성을 나타내는 데이터 - 멤버변수 or 필드
+		default String addr;		//멤버변수는 특별 상황이 아니면 초기값을 주지 않는다.
+							//데이터타입은 기본형, 참조형 모두 가능
+		private int age;
+		
+		
+
+
+}

@@ -1,0 +1,17 @@
+package Chap05;
+
+import java.util.Random;
+
+//참조형데이터 배열 만들기
+public class ArrayTest02 {
+	public static void main(String[] args) {
+		String[] strArr = new String[3];
+		Random[] randArr = new randArr[5];
+		Scanner[] keyArr = new Scanner[100];
+		
+		System.out.println(strArr[0]);
+		System.out.println(randArr[0]);
+		System.out.println(keyArr[0]);
+	}
+
+}

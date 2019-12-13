@@ -1,0 +1,13 @@
+package OpenTUtorials;
+
+public class String {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World"); //String(¹®ÀÚ¿­)
+		
+		System.out.println("Hello"
+				+ " World");
+		
+	}
+
+}
