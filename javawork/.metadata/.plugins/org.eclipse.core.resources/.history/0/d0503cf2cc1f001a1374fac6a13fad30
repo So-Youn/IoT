@@ -1,0 +1,26 @@
+package workbook.poly.Car;
+
+import workbook.poly.Shape;
+
+public class CarTest {
+	public static void main(String[] args) {
+		Car[] car = new Car[2];
+		car[0] = new L3("L3","1500",50,25,0);
+		car[1] = new L5("L5","2000",70,35,0);
+		Car.print();
+		for (int i = 0; i < car.length; i++) {
+			System.out.println(car[i].getName()+"\t\t"+car[i].getEngine()+"\t  "+car[i].getOilTank()+"\t    "
+					+car[i].getOilSize()+"\t"+car[i].getDistance()+"\t");
+		}
+		System.out.println("25주유");
+		car[0].setOil(25);
+		car[1].setOil(25);
+		for (int i = 0; i < car.length; i++) {
+			System.out.println(car[i].getName()+"\t\t"+car[i].getEngine()+"\t  "+car[i].getOilTank()+"\t    "
+					+car[i].getOilSize()+"\t"+car[i].getDistance()+"\t");
+	}
+		System.out.println("80주행");
+		car[0].go(80);
+		car[1].go(80);
+	}
+}

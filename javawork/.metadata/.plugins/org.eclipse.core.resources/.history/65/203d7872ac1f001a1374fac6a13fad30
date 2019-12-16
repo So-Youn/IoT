@@ -1,0 +1,19 @@
+package workbook.poly;
+
+public class Rectangle extends Shape{
+	public Rectangle() {
+		
+	}
+	public Rectangle(int width, int height, String colors){
+		super(width, height,colors);
+	}
+	
+	/*public void setResize(int size) {
+		
+	}*/
+	@Override
+	public double getArea() {
+		double area = (double)(getWidth()*getHeight());
+		return area;
+	}
+}

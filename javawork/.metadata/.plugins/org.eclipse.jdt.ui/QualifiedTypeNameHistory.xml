@@ -9,5 +9,12 @@
 <fullyQualifiedTypeName name="workbook.ClassTest.Company"/>
 <fullyQualifiedTypeName name="oop.Chap07.Staff"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="oop.Chap07.poly.AbstractSuper"/>
+<fullyQualifiedTypeName name="oop.Chap07.poly.Beverage"/>
+<fullyQualifiedTypeName name="oop.Chap07.poly.Coffee"/>
+<fullyQualifiedTypeName name="workbook.poly.Calc"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="workbook.poly.Shape"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,32 @@
+package workbook.poly;
+
+
+public class Rectangle extends Shape implements Resize{
+	public Rectangle() {
+		
+	}
+	public Rectangle(int width, int height, String colors){
+		super(width, height,colors);
+	}
+	
+	/*public void setResize(int size) {
+		
+	}*/
+	@Override
+	public double getArea() {
+		double area = (double)(getWidth()*getHeight());
+		return area;
+	}
+	@Override
+	public void setResize(int size) {
+		size = 5;
+		super.setHeight(getHeight()+5);
+		
+		
+	}
+	/*@Override
+	public void setResize() {
+		// TODO Auto-generated method stub
+		
+	}*/
+}

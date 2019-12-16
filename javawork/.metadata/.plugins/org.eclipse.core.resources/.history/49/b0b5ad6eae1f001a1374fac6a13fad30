@@ -1,0 +1,9 @@
+package workbook.poly;
+
+public class Resize {
+	interface Resize{
+		public abstract void setResize();
+
+		void setResize(int size);
+	}
+}

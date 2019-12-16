@@ -1,0 +1,18 @@
+package oop.Chap07.poly;
+
+import javax.swing.JFrame;
+//윈도우 창 
+class GUITest extends JFrame{
+	GUITest(String title){
+		super(title);
+		setSize(500,500);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
+public class InterfaceTest {
+	public static void main(String[] args) {
+		GUITest obj = new GUITest("인터페이스 연습");
+	}
+
+}

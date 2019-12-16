@@ -1,0 +1,7 @@
+package workbook.poly;
+
+public class Resize {
+	public void setReszie(int size) {
+		set
+	}
+}

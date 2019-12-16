@@ -1,0 +1,11 @@
+package workbook.poly;
+
+public class Calc {
+	public Calc() {
+		
+	}
+	public Calc(int data) {
+		super(data);
+		
+	}
+}

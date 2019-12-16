@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;oop.Chap07.poly.GUITest&apos; to &apos;InterfaceTest&apos;&#x0D;&#x0A;- Original project: &apos;worktest&apos;&#x0D;&#x0A;- Original element: &apos;oop.Chap07.poly.GUITest&apos;&#x0D;&#x0A;- Renamed element: &apos;oop.Chap07.poly.InterfaceTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GUITest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;oop.Chap07.poly{GUITest.java[GUITest" matchStrategy="1" name="InterfaceTest" qualified="false" references="true" similarDeclarations="false" stamp="1576460869837" textual="false" version="1.0"/>
+</session>

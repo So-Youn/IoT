@@ -42,7 +42,7 @@ class AbstractSub extends AbstractSuper{
 }
 public class AbstractTest {
 	public static void main(String[] args) {
-		AbstractSuper obj = new AbstractSuper() ;
+	//	AbstractSuper obj = new AbstractSuper() ;
 		
 		
 	}
