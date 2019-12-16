@@ -8,6 +8,11 @@ public abstract class Shape {
 	public shape(Point point) {
 		this.point=point;
 	}
-	public abstract double getArea();
-	public abstract double getCircumfrerence();
+	public double getArea() {
+		
+	}
+	public double getCircumfrerence() {
+		
+	}
+	
 }

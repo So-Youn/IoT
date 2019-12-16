@@ -1,6 +1,6 @@
 package workbook.poly;
 
-public abstract class Shape {
+public class Shape {
 	Protected Point point;
 	public shape() {
 		
@@ -8,6 +8,5 @@ public abstract class Shape {
 	public shape(Point point) {
 		this.point=point;
 	}
-	public abstract double getArea();
-	public abstract double getCircumfrerence();
+	
 }
