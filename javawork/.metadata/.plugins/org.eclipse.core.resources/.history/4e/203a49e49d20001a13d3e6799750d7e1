@@ -1,0 +1,10 @@
+package chap09.API.lang;
+//String 클래스의 기본 메소드
+public class StringTest02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

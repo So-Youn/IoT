@@ -1,0 +1,30 @@
+package chap08;
+
+public class Calculator {
+	public static double plus(int a, int b) {
+		double result;
+		result = a+b;
+		return result;
+	}
+	public static double minus(int a, int b) {
+		double result;
+		result = a-b;
+		return result;
+	}
+	public static double multiple(int a, int b) {
+		double result;
+		result = a*b;
+		return result;
+		
+	}
+	public static double divide(int a,int b) {
+		double result=0;
+		try {
+			result = a/b;
+		}catch(NumberFormatException e) {
+			System.out.println("Exception이 발생했습니다. 다시 입력해 주세요");
+		}
+		return result;
+		
+	}
+}

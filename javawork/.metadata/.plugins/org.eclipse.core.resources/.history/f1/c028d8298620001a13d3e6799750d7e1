@@ -1,0 +1,23 @@
+package chap08;
+
+public class CalcTest {
+	public static void main(String[] args) {
+		int a = Integer.parseInt(args[0]);
+		int b = Integer.parseInt(args[1]);
+		Calculator calc = new Calculator();
+		
+		if (args[2] == "+") {
+			Calculator.plus(a,b);
+		}else if(args[2] == "-") {
+			Calculator.minus(a,b);
+		}else if(args[2] == "*") {
+			Calculator.multiple(a,b);
+		}else if(args[2] == "/") {
+			Calculator.divide(a,b);
+		}
+		
+	}
+
+	
+
+}

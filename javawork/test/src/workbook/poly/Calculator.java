@@ -19,7 +19,7 @@ public class Calculator {
 	}
 	public static double divide(int a,int b) {
 		double result;
-		result = a%b;
+		result = a/b;
 		return result;
 		
 	}

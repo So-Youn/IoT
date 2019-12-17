@@ -1,0 +1,16 @@
+package workbook.poly.Animal;
+
+class Chicken extends Animal implements Cheatable{
+	public Chicken() {
+		
+	}
+	public Chicken(int speed) {
+		super(speed);
+	}
+	@Override
+	public void run(int hours) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

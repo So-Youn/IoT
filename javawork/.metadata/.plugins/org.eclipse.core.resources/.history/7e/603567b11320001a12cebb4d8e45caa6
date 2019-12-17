@@ -1,0 +1,7 @@
+package oop.chap07.Shape;
+
+
+	public interface Movable{
+		void move(int x, int y);
+	}
+

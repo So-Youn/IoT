@@ -1,0 +1,10 @@
+package chap08;
+
+public class Test {
+	public static void main(String[] args) {
+		ThrowsTest01 obj = new ThrowsTest01();
+		int num = obj.test(100, 0);
+		System.out.println("°á°ú : "+num);
+	}
+
+}
