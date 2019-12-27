@@ -1,7 +1,0 @@
-package workbook.poly;
-
-
-	interface Resize{
-		void setResize(int size);
-	}
-

@@ -1,6 +1,7 @@
 package workbook.poly.Animal;
 
-public class Dog extends Animal implements Cheatable {
+class Dog extends Animal {
+	double distance;
 	public Dog() {
 
 	}
@@ -11,14 +12,10 @@ public class Dog extends Animal implements Cheatable {
 
 	@Override
 	public void run(int hours) {
-		setDistance(getDistance() * (hours/2));
+		setDistance((getSpeed() * hours)/2);
 
 	}
 
-	@Override
-	public void fly() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }

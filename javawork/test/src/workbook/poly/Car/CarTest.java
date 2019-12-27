@@ -1,6 +1,6 @@
 package workbook.poly.Car;
 
-import workbook.poly.shape.Shape;
+
 
 public class CarTest {
 	public static void main(String[] args) {
