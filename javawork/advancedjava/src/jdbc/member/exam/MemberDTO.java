@@ -11,8 +11,9 @@ public class MemberDTO {
 	private Date hireDate;
 	private int point;
 	
-	public MemberDTO() {
-		
+	public MemberDTO(String id, String pass) {
+		this.id = id;
+		this.pass = pass;
 	}
 	
 	public MemberDTO(String id, String pass, String name, String addr, String deptno) {

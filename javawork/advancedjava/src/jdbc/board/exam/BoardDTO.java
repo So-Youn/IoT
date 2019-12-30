@@ -9,18 +9,17 @@ public class BoardDTO {
 	private String content;
 	private Date writeDate;
 	private int hit;
-	
 	public BoardDTO() {
 		
-	}	
-	//insert¿ë
+	}
+	//insert용
 	public BoardDTO(String id, String title, String content) {
 		super();
 		this.id = id;
 		this.title = title;
 		this.content = content;
 	}
-	//select¿ë
+	//select용
 	public BoardDTO(int boardNum, String id, String title, String content, Date writeDate, int hit) {
 		super();
 		this.boardNum = boardNum;
@@ -29,14 +28,12 @@ public class BoardDTO {
 		this.content = content;
 		this.writeDate = writeDate;
 		this.hit = hit;
-	}	
-
+	}
 	@Override
 	public String toString() {
 		return "BoardDTO [boardNum=" + boardNum + ", id=" + id + ", title=" + title + ", content=" + content
 				+ ", writeDate=" + writeDate + ", hit=" + hit + "]";
 	}
-	
 	public int getBoardNum() {
 		return boardNum;
 	}
@@ -73,6 +70,5 @@ public class BoardDTO {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
-	
 	
 }
