@@ -1,0 +1,24 @@
+@charset "EUC-KR";
+
+body{
+	font-size: 9pt;
+}
+
+#box{
+	height: 80px;
+	background-image: url("../../images/background.gif");
+	background-repeat: no-repeat;	/* 패턴 반복 여부 */
+	background-color: #a7cece;
+	padding: 20px;
+	padding-left: 80px;
+	font-style: italic;
+	margin-left: 30px;
+	border-radius: 20px;
+	overflow: auto;		/* 글자 수 초과시 스크롤 바 생성 */
+}
+#outer {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}

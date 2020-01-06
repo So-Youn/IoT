@@ -5,16 +5,16 @@ import java.util.ArrayList;
 public class ArrayListExam02 {
 	public static void main(String[] args) {
 		/*번호 	성명	 	자바 		웹	  android
-		 * 1  	장동건 	97		100		88		=> 담아야 할 데이터는 여러개지만 타입이 전부 다를 때, => StudentDOT 만들어서 사용
-		 * 2 	이민호 	100		92		91
-		 * 3 	류준열	88		96		78			
+		 * 1  	강동원  	97		100		88		=> 담아야 할 데이터는 여러개지만 타입이 전부 다를 때, => StudentDOT 만들어서 사용
+		 * 2 	현빈 		100		92		91
+		 * 3 	차은우	88		96		78			
 		 */
 		//ArrayList에 데이터 저장하기
 		ArrayList<StudentDTO> stdlist = new ArrayList<StudentDTO>();
 		
-		StudentDTO std1 = new StudentDTO(1,"장동건", 97,100,88);
-		StudentDTO std2 = new StudentDTO(2,"이민호", 100,92,91);
-		StudentDTO std3 = new StudentDTO(3,"류준열", 97,96,78);
+		StudentDTO std1 = new StudentDTO(1,"강동원", 97,100,88);
+		StudentDTO std2 = new StudentDTO(2,"현빈", 100,92,91);
+		StudentDTO std3 = new StudentDTO(3,"차은우", 97,96,78);
 		
 		stdlist.add(std1);
 		stdlist.add(std2);
