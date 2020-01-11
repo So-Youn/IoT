@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+    text-align: justify;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-image:url('../images/disney.jpg'); /* Green */
+    color: #ffffff;
+    width: auto;
+  }
+  .bg-2 { 
+    background-color: black; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  b{
+  color : pink;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Walt disney</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/clientweb/bootstrap_exam/second.html">insideout</a></li>
+        <li><a href="#">Marvel</a></li>
+        <li><a href="#">StarWards</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">What is this?</h3>
+  <img src="../images/InsideOut.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>I'm an InsideOut</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What's this film about?</h3>
+  <p>영화의 주인공은 미국 미네소타 주 출신의 열한 살 소녀 라일리이지만, 그 라일리의 마음을 이끌어가는 진정한 이야기 속 ‘인물’들은 다섯 가지 감정, 즉 <b>기쁨, 슬픔, 경멸, 분노, 공포</b>입니다. 아름답고 명랑한 ‘기쁨’, 푸른색의 통통하고 우울한 ‘슬픔’, 멋드러진 초록색 드레스를 뽐내는 ‘경멸’, 넥타이 차림의 새빨간 ‘분노’, 그리고 바싹 마른 채 두 손을 모아쥐고 발을 동동 구르는 ‘공포’는 라일리의 머릿속 ‘본부(headquarter)’에서, 라일리가 날마다 쌓아가는 기억을 기쁨으로 물들이기 위해 노력합니다. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> 더 알아보고 싶다면?
+  </a>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>©Disney ©Disney/Pixar ©MARVEL © & ™ Lucasfilm Ltd. <a href="https://www.w3schools.com">http://www.disney.co.kr/home/index.jsp</a></p> 
+</footer>
+
+</body>
+</html>
