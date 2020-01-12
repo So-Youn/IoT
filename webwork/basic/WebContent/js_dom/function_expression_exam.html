@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<!-- 페이지가 로딩될 때 각각의 버튼에 click이벤트를 연결 
+	- 표현식
+	- 1~4번 버튼까지 모두 id를 정의하고 표현식으로 이벤트 연결
+	- 1~3번까지는 익명의 함수를 이용해서 표현식으로 이벤트 연결
+	- 4번 버튼은 callback으로 이벤트 연결
+		callback함수명 : btnTest
+-->	
+	<script type="text/javascript">
+		window.onload = function(){
+			document.getElementById("btn1").onclick = function() {
+				alert(this.value);
+			}
+			document.getElementById("btn2").onclick = function() {
+				alert(this.value);
+			}
+			document.getElementById("btn3").onclick = function() {
+				alert(this.value);
+			}
+			document.getElementById("btn4").onclick = btnTest;
+		}
+		function btnTest() {
+			alert(this.value);
+		
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" id="btn1" value="1번버튼"/>
+		<input type="button" id="btn2" value="2번버튼"/>
+		<input type="button" id="btn3" value="3번버튼"/>
+		<input type="button" id="btn4" value="4번버튼"/>
+	</form>
+</body>
+</html>
