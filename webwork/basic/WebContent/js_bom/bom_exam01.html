@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<script type="text/javascript">
+		function calc(){
+			val = document.calcform.count.value;
+			document.getElementById("result").innerHTML = (12900*val)*0.9;
+		}
+	</script>
+</head>
+<body>
+	<form name="calcform">
+		<label> 수량: </label>
+		<input type="text" name="count" onkeyup="calc()">
+		<span id="result"></span>
+	</form>
+</body>
+</html>
