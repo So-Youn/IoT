@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+</head>
+<body>
+	<div id="main">
+		<div class="test1">jQuery~~~</div>
+		<div class="test2">jQuery~~~~</div>
+		<div id="test3">jQuery~~~~</div>
+		<div id="test4">jQuery~~~~</div>
+		<div id="test5">jQuery~~~~</div>
+	</div>
+	<form>
+		<input type="button" id="nodetest" value="노드가져오기"/>
+ 	</form>
+	<script type="text/javascript">
+		//DOM노드 액세스
+		$(document).ready(function(){
+			$("#nodetest").on("click",function(){
+			/* 특정 노드의 하위노드를 가져와서 작업하기 
+			children(): 특정 노드의 하위노드를 모두 반환
+			last(): 특정 노드의 lastChild
+			first(): 특정 노드의 firstChil
+			*/
+			list = $("#main").children();
+			alert(list.length)
+			//메소드 체이닝 가능 - 메소드의 반환 결과로 바로 다른 메소드를 연결해서 호출할 수 있다.
+			$("#main").children().css("color","blue");
+			$("#main").children().last().css("color","pink");
+			//json형식으로 css 정의
+			$("#main").children().first().css({"color":"orange","border":"solid 1px red"});
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
