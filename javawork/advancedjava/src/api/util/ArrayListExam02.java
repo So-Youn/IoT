@@ -26,7 +26,7 @@ public class ArrayListExam02 {
 		int size = stdlist.size();
 		for(int i =0;i<size;i++) {
 			StudentDTO std = stdlist.get(i);
-			System.out.print("번호 : "+std.getNum()+",");
+			System.out.print("번호 : "+std.getNumber()+",");
 			System.out.print("성명: "+std.getName()+",");
 			System.out.print("자바 : "+std.getJava()+",");
 			System.out.print("웹 : "+std.getWeb()+",");

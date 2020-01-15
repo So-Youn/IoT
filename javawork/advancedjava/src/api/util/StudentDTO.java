@@ -1,36 +1,29 @@
 package api.util;
 
-public class StudentDTO {	//DTO 만들 때, 멤버변수 , 생성자 , SETGET메소드 , ToString 만들기
-	private int num;
+public class StudentDTO {
+	private int number;
 	private String name;
 	private int java;
 	private int web;
 	private int android;
+	
 	public StudentDTO() {
 		
 	}
-	public StudentDTO(int num, String name, int java, int web, int android) {
+	public StudentDTO(int number, String name, int java, int web, int android) {
 		super();
-		this.num = num;
+		this.number = number;
 		this.name = name;
 		this.java = java;
 		this.web = web;
 		this.android = android;
 	}
 	
-	
-	@Override
-	public String toString() {
-		return "StudentDTO [num=" + num + ", name=" + name + ", java=" + java + ", web=" + web + ", android=" + android
-				+ "]";
+	public int getNumber() {
+		return number;
 	}
-	
-	
-	public int getNum() {
-		return num;
-	}
-	public void setNum(int num) {
-		this.num = num;
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	public String getName() {
 		return name;
