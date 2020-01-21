@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import dept.DeptDTO;
+
 @WebServlet(description = "forwawrd", urlPatterns = { "/forward.do" })
 public class ForwardServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -25,8 +27,8 @@ public class ForwardServlet extends HttpServlet {
 		request.setAttribute("mydata", dept);
 		System.out.println("ForwardServlet실행완료");
 		//2.요청재지정 - forward
-		RequestDispatcher rd = request.getRequestDispatcher(arg0)
-				
+		RequestDispatcher rd = request.getRequestDispatcher("/jspbasic/subPage.jsp");
+		rd.forward(request, response);		
 	}
 
 }
