@@ -1,8 +1,12 @@
 package app3;
 
-import app2.MyBeanStyle;
 
-public class MyBeanStyleB implements MyBeanStyle {
+public class MyBeanStyleB extends MyBeanStyle {
+	public MyBeanStyleB() {
+		System.out.println("MyBeanStyleB의 기본 생성자");
+	}
+	
+	
 	public void Hello(String name) {
 		System.out.println("Hello..."+name);
 	}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="tv" class="dl.exam01.SamsungTV" /> -->
+	<bean id="tv" class="dl.exam01.LgTV" />
+
+	<bean id="mydao" class="di.constructor.basic.MemberDAO" />
+	<bean id="insa" class="di.constructor.basic.InsaImpl">
+		<!-- 매개변수 1개당 constructor-arg 한 개를 의미. -->
+		<constructor-arg ref="mydao" />	<!--ref는 이미 만들어진 객체를 의미한다. (reference, 참조형) -->
+	</bean>
+
+	<bean id="player" class="di.constructor01.Player">
+		<constructor-arg ref="dice" />
+	</bean>
+	<bean id="dice" class="di.constructor01.Dice" /> 	<!-- interface는 생성을 못하기 때문에 bean으로 만들지 못한다. -->
+
+
+
+</beans>
