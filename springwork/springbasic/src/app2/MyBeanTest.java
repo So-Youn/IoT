@@ -14,11 +14,10 @@ import app3.MyBeanStyleB;
 public class MyBeanTest {
 	public static void main(String[] args) {
 		MyBeanStyleB obj = new MyBeanStyleB();
-		MyBeanStyleA obj2 = new MyBeanStyleA();
+		//MyBeanStyleA obj2 = new MyBeanStyleA();
 		run(obj);
 		show(obj);
-		run(obj2);
-		show(obj2);
+
 		
 	}
 
