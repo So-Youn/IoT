@@ -1,7 +1,17 @@
 package book.exam.constructor;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+@Service("lg")
 public class LgTV implements TV{
+	@Autowired
+	@Qualifier("apple")
 	Speaker speaker;
+	public LgTV() {
+		System.out.println("기본 생성자");
+	}
 	public LgTV(Speaker speaker) {
 		super();
 		this.speaker = speaker;

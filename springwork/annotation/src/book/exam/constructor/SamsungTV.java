@@ -1,8 +1,18 @@
 package book.exam.constructor;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+@Service("samsung")
 public class SamsungTV implements TV{
 	//현재 클래스 내부에서 사용하는 객체 - 스프링컨테이너를 통해 전달받을 수 있도록 준비
+	@Autowired
+	@Qualifier("sony")
 	Speaker speaker;
+	public SamsungTV() {
+		System.out.println("기본 생성자");
+	}
 	public SamsungTV(Speaker speaker) {
 		super();
 		this.speaker = speaker;

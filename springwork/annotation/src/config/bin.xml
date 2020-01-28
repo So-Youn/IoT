@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	<!-- bean을 설정파일에 직접 등록하지 않는다. 
+		 annotation을 이용해서 등록 - 어떤 패키지에서 빈을 찾아야 하는지는 명시
+		 @Service => 일반 객체(서비스객체를 등록)
+	-->
+	
+	<context:component-scan base-package="exam"/> <!--exam에 속해있는 모든 패키지의 bean을 알아서 만들어준다.  -->
+	<!-- <context:component-scan base-package="book"/> -->
+</beans>

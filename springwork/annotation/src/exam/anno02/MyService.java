@@ -1,5 +1,5 @@
 package exam.anno02;
 
-public interface Service {
+public interface MyService {
 	void test();
 }

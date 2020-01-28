@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="frontController1" path="/frontController1" reloadable="true" source="org.eclipse.jst.jee.server:frontController1"/><Context docBase="frontController" path="/frontController" reloadable="true" source="org.eclipse.jst.jee.server:frontController"/><Context docBase="Springmvc" path="/Springmvc" reloadable="true" source="org.eclipse.jst.jee.server:Springmvc"/><Context docBase="springmvctest" path="/springmvctest" reloadable="true" source="org.eclipse.jst.jee.server:springmvctest"/></Host>
+      <Context docBase="frontController1" path="/frontController1" reloadable="true" source="org.eclipse.jst.jee.server:frontController1"/><Context docBase="frontController" path="/frontController" reloadable="true" source="org.eclipse.jst.jee.server:frontController"/><Context docBase="Springmvc" path="/Springmvc" reloadable="true" source="org.eclipse.jst.jee.server:Springmvc"/><Context docBase="springmvctest" path="/springmvctest" reloadable="true" source="org.eclipse.jst.jee.server:springmvctest"/><Context docBase="annotation" path="/annotation" reloadable="true" source="org.eclipse.jst.jee.server:annotation"/></Host>
     </Engine>
   </Service>
 </Server>
