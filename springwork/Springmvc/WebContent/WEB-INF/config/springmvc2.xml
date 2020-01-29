@@ -3,8 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name ="/index.do" class="test.IndexController"/>
-	<bean name ="/search.do" class="member.SearchController"/>
+
+	<bean id ="test" class="test.TestController"/>
+	<bean id ="index" class="test.IndexController"/>
+	<bean id ="search" class="member.SearchController"/>
+	
+	
 	<!-- spring이 제공하는 viewResolver를 등록 -->
 	<bean id= "viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
