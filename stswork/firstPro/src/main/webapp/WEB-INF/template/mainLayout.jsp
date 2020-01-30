@@ -33,7 +33,7 @@
 	<div id="top" class="row">
 		<!-- tiles 설정 파일에 등록한 영역을 연결 
 			name 속성에 설정파일에서 등록한 영역의 이름을 설정-->
-		<tiles:insertAttribute name=""></tiles:insertAttribute>
+		<tiles:insertAttribute name="top"></tiles:insertAttribute>
 	</div>
 
 	<div style="background-color: #edeef1; padding: 20px; height: 800px">
