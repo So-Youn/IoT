@@ -4,9 +4,9 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
   <configuration>
   	<typeAliases>
-  		<typeAlias type="multil.erp.board.BoardVO" alias="board"/>
+  		<typeAlias type="multi.erp.board.BoardVO" alias="board"/>
   	</typeAliases>
   	<mappers>
-  		
+  		<mapper resource="mapper/board.xml"/>
   	</mappers>
   </configuration>
