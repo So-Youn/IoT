@@ -8,11 +8,32 @@
 <meta charset="UTF-8">
 	<title>Insert title here</title>
 	<script type="text/javascript">
-	
+		$(document).ready(function(){	/* 동적으로 컨텐츠를 만들려면 on을 사용해주어야 한다. */
+			$("#id").on("keyup",function(){
+				/* 자바스크립트에서 동기 방식으로 요청하기 
+				location.href = "/erp/emp/idCheck.do?id="
+						+$("#id").val(); */
+				//jQuery에서 aJax로 요청하기 - get방식
+				
+				/* url => 요청 path
+				   data => 파라미터 (value): json 형식
+				   json형식 {"name":"value";"name":"value"....}
+				   success : ajax요청해서 성공적으로 데이터를 받아왔을 때 처리할 내용을 함수로 표현*/
+			$.get("/erp/emp/idCheck.do",
+					{"id":$("#id").val()},
+					function(data) { // data : 응답 데이터
+						//ajax로 요청에서 응답받은 데이터를 <span>태그 내부에 출력
+						$("#checkVal").text(data) // 웹페이지 text input데이터는 value로 표현
+						
+					},	"text")
+						
+		}); 
+	});
 	</script>
  </head>
 	
 <body>
+	<%= request.getAttribute("info") %>
 	<div class="container-fluid">
 			
 			<form class="form-horizontal" 
@@ -63,7 +84,8 @@
 						<div class="col-sm-3">
 							<input type="text" id="id" name="id"
 								placeholder="사번" class="form-control" 
-								minlength="4"  >
+								minlength="4" >
+								
 							
 						</div>
 						<span id="checkVal" style="color: red;"></span>
