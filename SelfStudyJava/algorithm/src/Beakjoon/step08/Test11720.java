@@ -5,6 +5,8 @@ import java.util.Scanner;
  * String -> char -> int 변환
  * 각 숫 자의 아스키코드는 0을 의미하는 48을 빼주면 자신의 수를 가지게 된다.
  * line.charAt(i)를 통해 숫자 값을 얻을 수 있다.
+ * charAt(index) : 문자열에서 인자로 주어진 값에 해당하는 문자를 리턴한다. 
+ * 
  */
 public class Test11720 {
 	public static void main(String[] args) {
