@@ -6,33 +6,29 @@ import gnu.io.NoSuchPortException;
 import gnu.io.PortInUseException;
 
 public class SerialConnectionTest {
-	public SerialConnectionTest(){
-		
-	}
-	public void connect(String portName){
-		try {
-			//COMÆ÷Æ®°¡ ½ÇÁ¦ Á¸ÀçÇÏ°í »ç¿ë°¡´ÉÇÑ »óÅÂÀÎÁö È®ÀÎ
-			CommPortIdentifier comportIdentifier = 
-					CommPortIdentifier.getPortIdentifier(portName);
-			if(comportIdentifier.isCurrentlyOwned()){
-				System.out.println("Æ÷Æ® »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù ");
-			}else{
-				System.out.println("Æ÷Æ® »ç¿ë °¡´É");
-				//port°¡ »ç¿ë °¡´ÉÇÏ¸é Æ÷Æ® ¿­°í Æ÷Æ® °´Ã¼ ¾ò¾î¿À±â
-				//¸Å°³º¯¼ö 1 : Æ÷Æ®¸¦ ¿­°í »ç¿ëÇÏ´Â ÇÁ·Î±×·¥ÀÇ ÀÌ¸§(¹®ÀÚ¿­)
-				//¸Å°³º¯¼ö2 : Æ÷Æ®¸¦ ¿­°í Åë½ÅÇÏ±â À§ÇØ ±â´Ù¸®´Â ½Ã°£(¹Ğ¸®¼¼ÄÁµå)
-				CommPort commPort = comportIdentifier.open("basic_serial",3000);
-				System.out.println(commPort);
-			}
-		} catch (NoSuchPortException e) {
-			e.printStackTrace();
-		} catch (PortInUseException e) {
-			e.printStackTrace();
-		}
-		
-	}
-	public static void main(String[] args) {
-		new SerialConnectionTest().connect("COM10");
-	}
-
+   public SerialConnectionTest() {
+      
+   }
+   public void connect(String portName) {
+      try {
+         //COMí¬íŠ¸ê°€ ì‹¤ì œ ì¡´ì¬í•˜ê³  ì‚¬ìš© ê°€ëŠ¥í•œ ìƒíƒœì¸ì§€ í™•ì¸
+         CommPortIdentifier commPortIdentifier = CommPortIdentifier.getPortIdentifier(portName);
+         if(commPortIdentifier.isCurrentlyOwned()) {//í¬íŠ¸ê°€ ì‚¬ìš©ì¤‘ì¸ì§€ ì²´í¬
+            System.out.println("í¬íŠ¸ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+         }else {
+            System.out.println("í¬íŠ¸ ì‚¬ìš©ê°€ëŠ¥");
+            //portê°€ ì‚¬ìš© ê°€ëŠ¥í•˜ë©´ í¬íŠ¸ë¥¼ ì—´ê³  í¬íŠ¸ê°ì²´ë¥¼ ì–»ì–´ì˜¤ê¸°
+            //ë§¤ê°œë³€ìˆ˜1 : í¬íŠ¸ë¥¼ ì—´ê³  ì‚¬ìš©í•˜ëŠ” í”„ë¡œê·¸ë¨ì˜ ì´ë¦„(ë¬¸ìì—´)
+            //ë§¤ê°œë³€ìˆ˜2 : í¬íŠ¸ë¥¼ ì—´ê³  í†µì‹ í•˜ê¸° ìœ„í•´ì„œ ê¸°ë‹¤ë¦¬ëŠ” ì‹œê°„(ë°€ë¦¬ì„¸ì»¨ë“œ)
+               CommPort commPort = commPortIdentifier.open("basic_serial",5000);
+         }
+      } catch (NoSuchPortException e) {
+         e.printStackTrace();
+      } catch (PortInUseException e) {
+         e.printStackTrace();
+      }
+   }
+   public static void main(String[] args) {
+      new SerialConnectionTest().connect("COM5");
+   }
 }
