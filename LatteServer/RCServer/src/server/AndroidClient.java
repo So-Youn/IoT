@@ -54,10 +54,21 @@ public class AndroidClient {
 				System.out.println("캔과 안드로이드에게 보내줄 메시지: " + msg);
 				// 캔에게 메시지 전
 				if (!msg.equals("")) {
-					filterUS(msg);
+					if(msg.startsWith("sonic/")){
+						String sonic = msg.replace("sonic/", "");
+						filterUS(sonic);
+						pw.println(msg);
+						pw.flush();
+					}else if (msg.startsWith("speed/")){
+						//String sonic = msg.replace("speed/", "");
+						//filterUS(sonic);
+						pw.println(msg);
+						pw.flush();
+					}
+					
 				}
-				pw.println(msg);
-				pw.flush();
+				/*pw.println(msg);
+				pw.flush();*/
 			}
 		}).start();
 	}
