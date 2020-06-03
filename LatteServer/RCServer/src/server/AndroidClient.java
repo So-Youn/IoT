@@ -50,22 +50,22 @@ public class AndroidClient {
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
-
-				System.out.println("캔과 안드로이드에게 보내줄 메시지: " + msg);
+				st = new StringTokenizer(msg,"/");
+				String protocol = st.nextToken();
+				String message = st.nextToken();
+				System.out.println("자르기 전: " + msg);
+				System.out.println("프로토콜:"+protocol+",메시지:"+message);
+				
 				// 캔에게 메시지 전
 				if (!msg.equals("")) {
-					if(msg.startsWith("sonic/")){
-						String sonic = msg.replace("sonic/", "");
-						filterUS(sonic);
+					if(protocol.equals("sonic")){
+						filterUS(message);
 						pw.println(msg);
 						pw.flush();
-					}else if (msg.startsWith("speed/")){
-						//String sonic = msg.replace("speed/", "");
-						//filterUS(sonic);
+					}else if (protocol.equals("speed")){
 						pw.println(msg);
 						pw.flush();
-					}
-					
+					}	
 				}
 				/*pw.println(msg);
 				pw.flush();*/
